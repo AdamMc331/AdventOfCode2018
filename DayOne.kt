@@ -6,7 +6,7 @@ fun main() {
 private fun calculateFrequency(input: String): Int {
     var frequency = 0
     
-    input.lines().filterNot(String::isEmpty).forEach {
+    input.lines().forEach {
         val instruction = it.first()
         val change = it.substring(1).toInt()
         
@@ -27,7 +27,7 @@ private fun calculateDuplicateFrequency(input: String): Int {
     frequencies.add(currentFrequency)
     
     while(true) {
-        input.lines().filterNot(String::isEmpty).forEach {
+        input.lines().forEach {
             val instruction = it.first()
             val change = it.substring(1).toInt()
 
