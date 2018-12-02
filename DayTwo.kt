@@ -5,7 +5,7 @@ fun main() {
 
 data class Pairing(val firstInput: String, val secondInput: String) {
     
-   	init {
+    init {
         assert(firstInput.length == secondInput.length)
     }
     
