@@ -17,7 +17,7 @@ data class Pairing(val firstInput: String, val secondInput: String) {
 }
 
 private fun findBestMatch(input: String): String {
-	val inputs = input.lines()
+    val inputs = input.lines()
     
     val pairings: MutableList<Pairing> = ArrayList()
     
@@ -30,7 +30,7 @@ private fun findBestMatch(input: String): String {
         }
     }
     
-	return pairings.minBy { it.differences }?.commonCharacters.orEmpty()
+    return pairings.minBy { it.differences }?.commonCharacters.orEmpty()
 }
 
 private fun calculateChecksum(input: String): Int {
